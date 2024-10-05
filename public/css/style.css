@@ -106,10 +106,9 @@ main#main {
 
 /* Songs list */
 #songs-list {
-	list-style-type: none;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	list-style-type: none;
 	padding-left: 16px;
 }
 
@@ -138,13 +137,11 @@ main#main {
 /* Current song */
 #left-content {
 	display: flex;
-	align-items: center;
 	height: 100%;
 }
 
 #current-song-image {
 	height: 100%;
-	width: auto;
 	align-items: center;
 	justify-content: center;
 	margin-right: 16px;
