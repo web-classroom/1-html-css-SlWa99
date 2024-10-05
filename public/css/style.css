@@ -29,6 +29,8 @@ ul {
 	font-weight: bold;
 	font-size: 48px;
 	line-height: 1.25;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .subtitle1 {
@@ -141,6 +143,8 @@ main#main {
 
 #current-song-image {
 	height: 100%;
+	align-items: center;
+	justify-content: center;
 	margin-right: 16px;
 }
 
