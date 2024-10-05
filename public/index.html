@@ -12,83 +12,88 @@
 		<title>Hits of the moment | Music player</title>
 	</head>
 
-	<body>
-		<main>
-			<section id="playlist-info">
-				<img src="images/2098157264.jpeg" id="playlist-image" />
-				<div>
-					<p class="body1">Playlist</p>
-					<h1 class="title">Hits of the moment</h1>
-					<p class="body1">By Fábio - Deezer Pop Editor</p>
-					<p class="body1">2016 · 60 songs · 162 minutes</p>
-				</div>
-			</section>
+	<body id="body">
+		<div id="body-container">
+			<main id="main">
+				<section id="playlist-info">
+					<img
+						src="images/2098157264.jpeg"
+						id="playlist-image"
+						alt="Playlist cover"
+					/>
+					<div id="playlist-info-container">
+						<span class="body1">Playlist</span>
+						<h1 class="title" id="playlist-title">Hits of the moment</h1>
+						<p class="body1">By Fábio - Deezer Pop Editor</p>
+						<p class="body1">2016 · 60 songs · 162 minutes</p>
+					</div>
+				</section>
 
-			<section>
-				<ul id="songs-list">
-					<li>
-						<h2 class="subtitle1">The Kid Laroi</h2>
-						<p class="body1">Stay</p>
-					</li>
-					<li>
-						<h2 class="subtitle1">Lil Nas X</h2>
-						<p class="body1">INDUSTRY BABY</p>
-					</li>
-					<li>
-						<h2 class="subtitle1">Doja Cat</h2>
-						<p class="body1">Woman</p>
-					</li>
-					<li>
-						<h2 class="subtitle1">Ed Sheeran</h2>
-						<p class="body1">Bad Habits</p>
-					</li>
-					<li>
-						<h2 class="subtitle1">Drake</h2>
-						<p class="body1">Way 2 Sexy</p>
-					</li>
-					<li>
-						<h2 class="subtitle1">Farruko</h2>
-						<p class="body1">Pepas</p>
-					</li>
-					<li>
-						<h2 class="subtitle1">The Weeknd</h2>
-						<p class="body1">Take My Breath</p>
-					</li>
-					<li>
-						<h2 class="subtitle1">Billie Eilish</h2>
-						<p class="body1">Happier Than Ever</p>
-					</li>
-				</ul>
-			</section>
-		</main>
+				<section>
+					<ul id="songs-list">
+						<li>
+							<p class="subtitle1">The Kid Laroi</p>
+							<p class="body1">Stay</p>
+						</li>
+						<li>
+							<p class="subtitle1">Lil Nas X</p>
+							<p class="body1">INDUSTRY BABY</p>
+						</li>
+						<li>
+							<p class="subtitle1">Doja Cat</p>
+							<p class="body1">Woman</p>
+						</li>
+						<li>
+							<p class="subtitle1">Ed Sheeran</p>
+							<p class="body1">Bad Habits</p>
+						</li>
+						<li>
+							<p class="subtitle1">Drake</p>
+							<p class="body1">Way 2 Sexy</p>
+						</li>
+						<li>
+							<p class="subtitle1">Farruko</p>
+							<p class="body1">Pepas</p>
+						</li>
+						<li>
+							<p class="subtitle1">The Weeknd</p>
+							<p class="body1">Take My Breath</p>
+						</li>
+						<li>
+							<p class="subtitle1">Billie Eilish</p>
+							<p class="body1">Happier Than Ever</p>
+						</li>
+					</ul>
+				</section>
+			</main>
+
+			<aside id="queue">
+				<p class="body1">Play next · 0 tracks</p>
+				<span id="empty-status" class="body1">This queue is empty</span>
+			</aside>
+		</div>
 
 		<aside id="player">
-			<div id="current-song-image">
-				<img src="images/242430582.jpeg" alt="Stay" />
+			<div id="left-content" class="content">
+				<img src="images/242430582.jpeg" alt="Stay" id="current-song-image" />
 				<div id="current-song-name">
-					<h3 class="subtitle2">STAY</h3>
+					<p class="subtitle2">STAY</p>
 					<p class="body2">The Kid Laroi</p>
 				</div>
 			</div>
 
-			<div id="controller">
+			<div id="controller" class="content">
 				<img src="icons/skip_previous.svg" alt="Skip Previous" />
 				<img src="icons/pause.svg" alt="Pause" />
 				<img src="icons/skip_next.svg" alt="Skip Next" />
 			</div>
 
-			<div id="right-content">
+			<div id="right-content" class="content">
 				<div id="sponsor">
-					<img
-						src="images/deezer-logo.svg"
-						alt="Deezer logo"
-						id="deezer-image"
-					/>
-					<p class="overline">Powered by</p>
+					<span class="overline">Powered by</span>
+					<img src="images/deezer-logo.svg" alt="Deezer logo" />
 				</div>
 			</div>
 		</aside>
-
-		<aside id="queue">Play next · 0 tracks This queue is empty</aside>
 	</body>
 </html>

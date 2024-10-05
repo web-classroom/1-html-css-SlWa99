@@ -3,12 +3,23 @@ body {
 	height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+/* Colors */
 :root {
 	--gray-100: #f3f4f6;
 	--gray-200: #e5e7eb;
 	--gray-400: #9ca3af;
 }
 
+/* Typography */
 .title {
 	font-family: "Noto Sans", sans-serif;
 	font-weight: bold;
@@ -54,12 +65,35 @@ body {
 	line-height: 1.5/18px;
 }
 
+/* Main & body */
+#body {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#body-container {
+	display: flex;
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+#main {
+	padding: 86px;
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+/* Playlist infos */
 #playlist-info {
 	display: flex;
 	align-items: flex-end;
-	margin-top: 86px;
-	margin-left: 86px;
 	margin-bottom: 48px;
+}
+
+#playlist-info-container {
+	display: flex;
+	flex-direction: column;
 }
 
 #playlist-image {
@@ -68,12 +102,12 @@ body {
 	margin-right: 32px;
 }
 
+/* Songs list */
 #songs-list {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin-left: 86px;
 	padding-left: 16px;
 }
 
@@ -85,21 +119,74 @@ body {
 	background-color: var(--gray-100);
 }
 
+/* Bottom aside */
 #player {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	height: 80px;
-	background-color: brown;
 	border-top: 1px solid var(--gray-200);
 }
 
-#current-song-image {
+#player > .content {
 	display: flex;
+	align-items: center;
+}
+
+/* Current song */
+#left-content {
+	display: flex;
+	height: 100%;
+}
+
+#current-song-image {
+	height: 100%;
+	margin-right: 16px;
 }
 
 #current-song-name {
+	line-height: 8px;
+}
+
+/* Song controller */
+#controller {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+/* Deezer image */
+#right-content {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+#sponsor {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: flex-start;
 	margin-left: 16px;
-	line-height: 0px;
+}
+
+#sponsor > img {
+	height: 30px;
+}
+
+/* Songs queue */
+#queue {
+	background-color: var(--gray-100);
+	border-left: 1px solid var(--gray-200);
+	position: relative;
+	width: 330px;
+	padding: 32px;
+}
+
+#empty-status {
+	color: var(--gray-400);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
