@@ -138,11 +138,13 @@ main#main {
 /* Current song */
 #left-content {
 	display: flex;
+	align-items: center;
 	height: 100%;
 }
 
 #current-song-image {
 	height: 100%;
+	width: auto;
 	align-items: center;
 	justify-content: center;
 	margin-right: 16px;
