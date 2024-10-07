@@ -60,7 +60,6 @@ body#body {
 	font-family: "Noto Sans", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
@@ -123,49 +122,45 @@ main#main {
 /* Bottom aside */
 #player {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: row;
 	height: 80px;
 	border-top: 1px solid var(--gray-200);
 }
 
 #player > .content {
 	display: flex;
-	align-items: center;
+	flex: 1;
 }
 
 /* Current song */
 #left-content {
-	display: flex;
 	align-items: center;
-	justify-content: center;
+	flex-direction: row;
 	height: 100%;
 }
 
 #current-song-image {
 	height: 100%;
-	align-items: center;
-	justify-content: center;
 	margin-right: 16px;
 }
 
 /* Song controller */
 #controller {
-	display: flex;
+	flex-direction: row;
+	flex-grow: 0;
 	gap: 32px;
-	left: 50%;
-}
-
-#controller > img {
-	height: 40px;
 	justify-content: center;
 	align-items: center;
 }
 
+#controller > img {
+	height: 40px;
+}
+
 /* Deezer image */
 #right-content {
-	display: flex;
-	align-items: flex-end;
+	justify-content: center;
+	align-items: end;
 	flex-direction: column;
 }
 
@@ -173,7 +168,7 @@ main#main {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 16px;
+	margin-right: 16px;
 }
 
 #sponsor > img {
