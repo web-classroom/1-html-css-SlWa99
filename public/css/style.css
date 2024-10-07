@@ -159,6 +159,12 @@ main#main {
 	gap: 20px;
 }
 
+#controller > img {
+	align-items: center;
+	justify-content: center;
+	vertical-align: center;
+}
+
 /* Deezer image */
 #right-content {
 	display: flex;
