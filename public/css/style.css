@@ -143,6 +143,8 @@ main#main {
 }
 
 #current-song-image {
+	display: block;
+	margin: 0 auto;
 	height: 100%;
 	align-items: center;
 	justify-content: center;
