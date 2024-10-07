@@ -159,6 +159,7 @@ main#main {
 	align-items: center;
 	justify-content: center;
 	gap: 32px;
+	left: 50%;
 }
 
 #controller > img {
