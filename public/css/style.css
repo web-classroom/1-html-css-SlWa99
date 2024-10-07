@@ -137,17 +137,17 @@ main#main {
 /* Current song */
 #left-content {
 	display: flex;
-	/* align-items: center;
-	justify-content: center; */
+	align-items: center;
+	justify-content: center;
 	height: 100%;
 }
 
 #current-song-image {
-	/* display: block;
-	margin: 0 auto; */
+	display: block;
+	margin: 0 auto;
 	height: 100%;
-	/* align-items: center;
-	justify-content: center; */
+	align-items: center;
+	justify-content: center;
 	margin-right: 16px;
 }
 
@@ -161,6 +161,8 @@ main#main {
 
 #controller > img {
 	height: 40px;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Deezer image */
