@@ -143,8 +143,6 @@ main#main {
 }
 
 #current-song-image {
-	display: block;
-	margin: 0 auto;
 	height: 100%;
 	align-items: center;
 	justify-content: center;
@@ -154,10 +152,6 @@ main#main {
 /* Song controller */
 #controller {
 	display: flex;
-	flex-direction: row;
-	flex-grow: 0;
-	align-items: center;
-	justify-content: center;
 	gap: 32px;
 	left: 50%;
 }
